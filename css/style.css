@@ -1,0 +1,237 @@
+/* ------------------------------
+   GENERAL STYLES
+---------------------------------*/
+
+/* Body defaults */
+body {
+  font-family: sans-serif;
+  color: #111827; /* gray-900 */
+  background-color: #f9fafb; /* gray-50 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sidebar Profile Image */
+.profile-img {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  border-radius: 9999px;
+  border: 4px solid #374151; /* gray-700 */
+}
+
+/* Sidebar Navigation */
+.sidebar-nav li {
+  margin: 0.75rem 0;
+  text-align: center;
+}
+.sidebar-nav li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.sidebar-nav li a:hover {
+  color: #14b8a6; /* teal-500 */
+}
+
+/* Buttons */
+.btn-upwork, .btn-teal {
+  display: inline-block;
+  background-color: #14b8a6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.btn-upwork:hover, .btn-teal:hover {
+  background-color: #0d9488;
+}
+
+.btn-gray {
+  display: inline-block;
+  background-color: #e5e7eb; /* gray-200 */
+  color: #111827;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.btn-gray:hover {
+  background-color: #d1d5db; /* gray-300 */
+}
+
+.btn-blue {
+  display: inline-block;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn-blue:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+/* Service Cards */
+.service-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.service-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Portfolio Items */
+.portfolio-item {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+.portfolio-item img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* ------------------------------
+   DARK MODE STYLES
+---------------------------------*/
+
+/* Apply dark mode globally */
+#dark-toggle:checked ~ aside,
+#dark-toggle:checked ~ main,
+#dark-toggle:checked body {
+  background-color: #111827; /* dark gray */
+  color: #ffffff; /* white text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sidebar dark mode */
+#dark-toggle:checked ~ aside {
+  background-color: #1f2937; /* gray-800 */
+}
+#dark-toggle:checked ~ aside .sidebar-nav li a {
+  color: #ffffff;
+}
+#dark-toggle:checked ~ aside .sidebar-nav li a:hover {
+  color: #10b981; /* teal-500 hover */
+}
+
+/* Buttons dark mode */
+#dark-toggle:checked ~ main .btn-gray {
+  background-color: #374151; /* gray-700 */
+  color: #ffffff;
+}
+#dark-toggle:checked ~ main .btn-teal {
+  background-color: #14b8a6;
+  color: #ffffff;
+}
+#dark-toggle:checked ~ main .btn-blue {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+/* Cards, portfolio, testimonials */
+#dark-toggle:checked ~ main .service-card,
+#dark-toggle:checked ~ main .portfolio-item,
+#dark-toggle:checked ~ main .testimonial {
+  background-color: #1f2937; /* gray-800 */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  color: #ffffff;
+}
+
+/* Headings dark mode */
+#dark-toggle:checked ~ main h1,
+#dark-toggle:checked ~ main h2,
+#dark-toggle:checked ~ main h3,
+#dark-toggle:checked ~ main h4,
+#dark-toggle:checked ~ main h5,
+#dark-toggle:checked ~ main h6,
+#dark-toggle:checked ~ aside h1,
+#dark-toggle:checked ~ aside h2,
+#dark-toggle:checked ~ aside h3,
+#dark-toggle:checked ~ aside h4,
+#dark-toggle:checked ~ aside h5,
+#dark-toggle:checked ~ aside h6 {
+  color: #ffffff;
+}
+
+/* Paragraphs, lists, strong text */
+#dark-toggle:checked ~ main p,
+#dark-toggle:checked ~ main li,
+#dark-toggle:checked ~ main p strong,
+#dark-toggle:checked ~ main li strong {
+  color: #ffffff;
+}
+
+/* Links inside text */
+#dark-toggle:checked ~ main p a,
+#dark-toggle:checked ~ main li a {
+  color: #10b981; /* teal-500 */
+}
+
+/* ------------------------------
+   DARK MODE TOGGLE SWITCH
+---------------------------------*/
+
+/* Switch container (label must be directly after checkbox) */
+.switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #374151; /* gray-700 */
+  border-radius: 9999px;
+  padding: 0 0.25rem;
+  cursor: pointer;
+  position: relative;
+  width: 3rem;
+  height: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.switch-ball {
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.switch-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+/* Animate ball when toggled */
+#dark-toggle:checked + .switch-label .switch-ball {
+  transform: translateX(1.5rem);
+}
+
+/* Change switch background when toggled */
+#dark-toggle:checked + .switch-label {
+  background-color: #10b981; /* teal-500 */
+}

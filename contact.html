@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - It's Easy Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-gray-900 text-white min-h-screen p-6">
+    <h2 class="text-2xl font-bold mb-6">It's Easy</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html#home" class="block py-2 hover:text-blue-400">Home</a></li>
+        <li><a href="index.html#about" class="block py-2 hover:text-blue-400">About</a></li>
+        <li><a href="index.html#services" class="block py-2 hover:text-blue-400">Services</a></li>
+        <li><a href="projects.html" class="block py-2 hover:text-blue-400">Projects</a></li>
+        <li><a href="index.html#portfolio" class="block py-2 hover:text-blue-400">Portfolio</a></li>
+        <li><a href="index.html#resume" class="block py-2 hover:text-blue-400">Resume</a></li>
+        <li><a href="index.html#testimonials" class="block py-2 hover:text-blue-400">Testimonials</a></li>
+        <li><a href="contact.html" class="block py-2 hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="flex-1 p-8">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold">Contact Us</h1>
+      <p class="text-gray-600">We’d love to hear from you! Reach out for collaborations, consultations, or any inquiries.</p>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Send a Message</h2>
+      <form action="#" method="POST" class="space-y-4 max-w-lg">
+        <div>
+          <label for="name" class="block font-medium">Name</label>
+          <input type="text" id="name" name="name" required 
+            class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+          <label for="email" class="block font-medium">Email</label>
+          <input type="email" id="email" name="email" required 
+            class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+          <label for="subject" class="block font-medium">Subject</label>
+          <input type="text" id="subject" name="subject" 
+            class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+          <label for="message" class="block font-medium">Message</label>
+          <textarea id="message" name="message" rows="5" required 
+            class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+
+        <div class="flex space-x-4">
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Submit</button>
+          <button type="reset" class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Direct Email -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Quick Email</h2>
+      <a href="mailto:your-email@example.com" 
+         class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+        📧 Send Email
+      </a>
+    </section>
+
+    <!-- Map (Optional) -->
+    <!-- Map -->
+<section>
+  <h2 class="text-2xl font-semibold mb-4">Our Location</h2>
+  <iframe class="w-full h-80 rounded-lg shadow" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.5849432340297!2d77.3955612149606!3d23.259933984828455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c426ddf2369c5%3A0x7c8c49a05a4f7b1!2sNew%20Market%2C%20Bhopal%2C%20Madhya%20Pradesh%20462003!5e0!3m2!1sen!2sin!4v1694351234567!5m2!1sen!2sin" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+    <footer class="mt-12 border-t pt-6 text-gray-600 text-sm">
+      © 2024 It's Easy Agency. All Rights Reserved.
+    </footer>
+  </main>
+</body>
+</html>

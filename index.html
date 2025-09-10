@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>It's Easy — Krish Yadav Portfolio</title>
+  <meta name="description" content="It's Easy is a professional media production and web development agency led by Krish Yadav. We create data-driven YouTube videos, high-converting shorts & reels, and modern websites that convert.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-gray-900 bg-gray-50">
+
+  <!-- Dark mode checkbox at the top -->
+  <input type="checkbox" id="dark-toggle" class="hidden">
+  
+  <!-- Sidebar Navigation -->
+  <aside class="fixed top-0 left-0 w-64 h-screen bg-gray-900 text-white flex flex-col justify-between shadow-lg">
+    <div>
+      <div class="p-6 text-center">
+        <img src="media/profile.jpeg" alt="Krish Yadav profile" class="profile-img">
+        <h1 class="mt-4 text-xl font-bold">Krish Yadav</h1>
+        <p class="text-sm text-gray-400">Founder — It's Easy</p>
+      </div>
+
+      <nav class="mt-6">
+        <ul class="sidebar-nav">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="projects.html">Projects</a></li> 
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li> 
+
+          <!-- Dark Mode Toggle -->
+         <!-- Dark Mode Toggle -->
+<li class="mt-4 flex justify-center items-center">
+  <!-- Checkbox directly before the label -->
+  <input type="checkbox" id="dark-toggle" class="hidden">
+  <label for="dark-toggle" class="switch-label">
+    <span class="switch-ball"></span>
+    <span class="switch-icons">
+      <span class="sun">☀️</span>
+      <span class="moon">🌙</span>
+    </span>
+  </label>
+</li>
+
+
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="p-6 text-center">
+      <a href="https://www.upwork.com/freelancers/~011ca5d599f9690429" target="_blank" class="btn-upwork">Hire on Upwork</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="ml-64 p-8 space-y-24">
+   
+  
+    <!-- Hero -->
+    <section id="home" class="min-h-screen flex flex-col justify-center">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Professional Video + Web Services for Creators & Brands</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mb-6">
+        We craft viral-ready YouTube videos, scroll-stopping shorts, and robust websites — strategy-first, execution-perfect.
+      </p>
+      <div class="space-x-4">
+        <a href="https://www.upwork.com/freelancers/~011ca5d599f9690429" target="_blank" class="btn-teal">Hire Us on Upwork</a>
+        <a href="#contact" class="btn-gray">Contact Krish</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="text-3xl font-bold mb-6">About It's Easy</h2>
+      <p class="text-gray-700 max-w-3xl mb-6">
+        I'm Krish Yadav — founder of It's Easy. With years of professional experience producing YouTube content and building conversion-driven websites, my agency focuses on measurable results: watch-time, view growth, and subscriber acquisition for creators; and improved lead capture and sales for businesses.
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Professional end-to-end production: scripting → voiceover → edit → thumbnail → strategy.</li>
+        <li>Short-form expertise: Reels, Shorts and TikTok repurposing to boost reach.</li>
+        <li>Web experience: fast, responsive sites built for conversions and SEO.</li>
+        <li>Clear communication: milestones, revisions, and delivery on time.</li>
+      </ul>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <article class="service-card">
+          <h3 class="text-xl font-semibold mb-2">YouTube Long-form Production</h3>
+          <p class="text-gray-600 text-sm mb-4">From script to strategy: scripting, VO, editing, thumbnail, consultation.</p>
+        </article>
+        <article class="service-card">
+          <h3 class="text-xl font-semibold mb-2">Shorts / Reels / TikTok</h3>
+          <p class="text-gray-600 text-sm mb-4">Vertical videos optimized for quick growth and attention-grabbing hooks.</p>
+        </article>
+        <article class="service-card">
+          <h3 class="text-xl font-semibold mb-2">Website Building</h3>
+          <p class="text-gray-600 text-sm mb-4">Responsive, modern websites with SEO basics and conversion-focused design.</p>
+        </article>
+        <article class="service-card">
+          <h3 class="text-xl font-semibold mb-2">Channel & Content Strategy</h3>
+          <p class="text-gray-600 text-sm mb-4">Audits, optimization, and growth experiments for creators and businesses.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2 class="text-3xl font-bold mb-6">Portfolio Highlights</h2>
+      <p class="text-gray-700 mb-6">Below are some examples of recent work. Visit the projects page for a full list.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="portfolio-item">
+          <img src="media/thumbnail.png" alt="YouTube Thumbnail Example">
+          <div class="p-4">
+            <h3 class="font-semibold">YouTube Growth Video</h3>
+            <p class="text-sm text-gray-600">Full production: script, VO, edit, thumbnail.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="media/insta.jpeg" alt="Instagram Reel Example">
+          <div class="p-4">
+            <h3 class="font-semibold">Instagram Reel</h3>
+            <p class="text-sm text-gray-600">Repurposed long-form into high-performing reels.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="media/website.png" alt="Website Screenshot">
+          <div class="p-4">
+            <h3 class="font-semibold">Client Website</h3>
+            <p class="text-sm text-gray-600">Responsive business website with optimized landing page.</p>
+          </div>
+        </div>
+      </div>
+      <a href="projects.html" class="btn-blue mt-6">See All Projects →</a>
+    </section>
+
+    <!-- Resume / Skills -->
+    <section id="resume">
+      <h2 class="text-3xl font-bold mb-6">Experience & Skills</h2>
+      <ol class="list-decimal list-inside mb-6 text-gray-700">
+        <li>Video Strategy & Scripting</li>
+        <li>Video Editing & Motion Graphics</li>
+        <li>Short-form Repurposing</li>
+        <li>Thumbnail Design & Creative Testing</li>
+        <li>Website Design & Development</li>
+      </ol>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Adobe Premiere Pro</li>
+        <li>Adobe After Effects</li>
+        <li>Audition / RX</li>
+        <li>Figma / Photoshop</li>
+        <li>WordPress / Tailwind</li>
+      </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2 class="text-3xl font-bold mb-6">What Clients Say</h2>
+      <blockquote class="testimonial">
+        “Working with Krish and the It's Easy team transformed our channel — improved watch time and consistent uploads.”
+        <footer class="mt-2 text-sm text-gray-500">— Client Name</footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        “Professional, communicative, and results-driven. Highly recommend for creators and businesses.”
+        <footer class="mt-2 text-sm text-gray-500">— Client Name</footer>
+      </blockquote>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="text-3xl font-bold mb-6">Contact & Hire</h2>
+      <p class="text-gray-700 mb-6">Ready to start? Click the Upwork button or email us directly.</p>
+      <div class="space-x-4">
+        <a href="https://www.upwork.com/freelancers/~011ca5d599f9690429" target="_blank" class="btn-teal">Hire on Upwork</a>
+        <a href="mailto:krishyadav2022@gmail.com" class="btn-gray">Email Us</a>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
